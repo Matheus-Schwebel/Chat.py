@@ -1,0 +1,26 @@
+<!-- templates/signup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Sign Up</title>
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <form method="POST" action="{{ url_for('main.signup') }}">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.name.label }}<br>
+            {{ form.name(size=32) }}<br>
+            {{ form.password.label }}<br>
+            {{ form.password(size=32) }}<br>
+            {{ form.confirm_password.label }}<br>
+            {{ form.confirm_password(size=32) }}<br>
+            {{ form.submit() }}
+        </p>
+    </form>
+    <a href="{{ url_for('main.index') }}">Already have an account? Log in here</a>
+</body>
+</html>

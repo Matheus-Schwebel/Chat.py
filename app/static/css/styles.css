@@ -1,0 +1,62 @@
+/* Reset de estilos para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Estilo para o contêiner principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Estilo para cabeçalhos */
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Estilo para as seções */
+.section {
+    margin-bottom: 20px;
+}
+
+/* Estilo para botões */
+.container a button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blue;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+#buttonSubmit {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blue;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}

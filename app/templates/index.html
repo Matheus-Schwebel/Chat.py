@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Levius Chat</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    </head>
+    <body>
+        <h1>Levius Chat</h1>
+        <form method="POST" class="container">
+            {{ form.hidden_tag() }}
+            {{ form.name.label }}: {{ form.name() }} {% for error in form.name.errors %}{{ error }}{% endfor %}<br>
+            {{ form.password.label }}: {{ form.password() }} {% for error in form.password.errors %}{{ error }}{% endfor %}<br>
+            {{ form.room.label }}: {{ form.room() }} {% for error in form.room.errors %}{{ error }}{% endfor %}<br><br>
+            {{ form.submit() }}
+            <br>
+            <br>
+            <a href="{{ url_for('main.signup') }}">Registrar</a><br>
+            <a href="https://192.168.15.5:5700">Jogo da Velha</a>
+        </form>
+        
+    </body>
+</html>
